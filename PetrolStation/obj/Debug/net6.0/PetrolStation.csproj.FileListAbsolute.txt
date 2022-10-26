@@ -1,0 +1,15 @@
+/Users/nelsonrodrigues/OneDrive - Agri.org/OneDrive - AB Agri/C#/PetrolStation/PetrolStation/bin/Debug/net6.0/PetrolStation
+/Users/nelsonrodrigues/OneDrive - Agri.org/OneDrive - AB Agri/C#/PetrolStation/PetrolStation/bin/Debug/net6.0/PetrolStation.deps.json
+/Users/nelsonrodrigues/OneDrive - Agri.org/OneDrive - AB Agri/C#/PetrolStation/PetrolStation/bin/Debug/net6.0/PetrolStation.runtimeconfig.json
+/Users/nelsonrodrigues/OneDrive - Agri.org/OneDrive - AB Agri/C#/PetrolStation/PetrolStation/bin/Debug/net6.0/PetrolStation.dll
+/Users/nelsonrodrigues/OneDrive - Agri.org/OneDrive - AB Agri/C#/PetrolStation/PetrolStation/bin/Debug/net6.0/PetrolStation.pdb
+/Users/nelsonrodrigues/OneDrive - Agri.org/OneDrive - AB Agri/C#/PetrolStation/PetrolStation/obj/Debug/net6.0/PetrolStation.csproj.AssemblyReference.cache
+/Users/nelsonrodrigues/OneDrive - Agri.org/OneDrive - AB Agri/C#/PetrolStation/PetrolStation/obj/Debug/net6.0/PetrolStation.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nelsonrodrigues/OneDrive - Agri.org/OneDrive - AB Agri/C#/PetrolStation/PetrolStation/obj/Debug/net6.0/PetrolStation.AssemblyInfoInputs.cache
+/Users/nelsonrodrigues/OneDrive - Agri.org/OneDrive - AB Agri/C#/PetrolStation/PetrolStation/obj/Debug/net6.0/PetrolStation.AssemblyInfo.cs
+/Users/nelsonrodrigues/OneDrive - Agri.org/OneDrive - AB Agri/C#/PetrolStation/PetrolStation/obj/Debug/net6.0/PetrolStation.csproj.CoreCompileInputs.cache
+/Users/nelsonrodrigues/OneDrive - Agri.org/OneDrive - AB Agri/C#/PetrolStation/PetrolStation/obj/Debug/net6.0/PetrolStation.dll
+/Users/nelsonrodrigues/OneDrive - Agri.org/OneDrive - AB Agri/C#/PetrolStation/PetrolStation/obj/Debug/net6.0/refint/PetrolStation.dll
+/Users/nelsonrodrigues/OneDrive - Agri.org/OneDrive - AB Agri/C#/PetrolStation/PetrolStation/obj/Debug/net6.0/PetrolStation.pdb
+/Users/nelsonrodrigues/OneDrive - Agri.org/OneDrive - AB Agri/C#/PetrolStation/PetrolStation/obj/Debug/net6.0/PetrolStation.genruntimeconfig.cache
+/Users/nelsonrodrigues/OneDrive - Agri.org/OneDrive - AB Agri/C#/PetrolStation/PetrolStation/obj/Debug/net6.0/ref/PetrolStation.dll
