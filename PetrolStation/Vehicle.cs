@@ -5,10 +5,10 @@ namespace PetrolStation
 {
     public class Vehicle
     {
-        string vehicleFuelType;
-        string vehicleType;
-        int vehicleTankSize;
-        int currentFuel;
+        string vehicleFuelType { get; set; }
+        string vehicleType { get; set; }
+        int vehicleTankSize { get; set; }
+        int currentFuel { get; set; }
         //int newVehicleCreation = 1500;
 
         //public Vehicle(string fuel, string type, int size, int startingFuel, int newVehicleCreation = 1500) this way you have a default value
@@ -38,5 +38,3 @@ namespace PetrolStation
 //Newly created vehicles will be created with a random amount of fuel already
 //in their tank (which cannot be greater than a half of their total tank capacity).
 //Fuelling time will be based on the above amount.
-
-//Lookup get and set commands

@@ -1,4 +1,4 @@
-﻿<Properties StartupConfiguration="{137A6F85-00E7-4099-87AD-FEF2B12E15CE}|Default">
-  <MonoDevelop.Ide.ItemProperties.PetrolStation FirstBuild="True" />
+﻿<Properties StartupConfiguration="{137A6F85-00E7-4099-87AD-FEF2B12E15CE}|Default" GitUserInfo="UsingGIT">
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.PetrolStation PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

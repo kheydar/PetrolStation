@@ -9,7 +9,7 @@ namespace PetrolStation
             : base(fuel, type, size, startingFuel, newVehicleCreation)
         {
             //int vehicleTankSize = 150;
-            //fuel = "Diesel";
+            fuel = "Diesel";
         }
     }
 
