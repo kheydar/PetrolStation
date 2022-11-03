@@ -1,4 +1,6 @@
-﻿namespace PetrolStation
+﻿using PetrolStation;
+
+namespace PetrolStation
 {
     class Program
     {
@@ -7,12 +9,20 @@
             string[] _fuelType = { "Petrol", "Diesel", "LPG" };
             string[] _vehicleTypes = { "Car", "Van", "Lorry" };
 
-            int fuelGenerator = new Random().Next(3);
-            int vehicleGenerator = new Random().Next(3);
+            Random random = new Random();
+            Car car = new Car();
 
-            Vehicle myObj = new Vehicle(_fuelType[fuelGenerator], _vehicleTypes[vehicleGenerator], 50, 12);
+
+
+
+            Vehicle myObj = new Vehicle(_fuelType[random.Next(1,3)], _vehicleTypes[random.Next(1, 3)], 50, 12);
             Console.WriteLine(myObj.VehicleInfo);
 
+            Vehicle myObj2 = new Vehicle(_fuelType[random.Next(1, 3)], _vehicleTypes[random.Next(1, 3)], 50, 12);
+            Console.WriteLine(myObj2.VehicleInfo);
+
+            Vehicle myObj3 = new Vehicle(_fuelType[random.Next(1, 3)], _vehicleTypes[random.Next(1, 3)], 50, 12);
+            Console.WriteLine(myObj3.VehicleInfo);
 
             //Console.WriteLine(_vehicleTypes[vehicleGenerator]);
             //Console.WriteLine(_fuelType[fuelGenerator]);
