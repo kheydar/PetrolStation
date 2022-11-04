@@ -4,29 +4,21 @@ namespace PetrolStation
 {
     class Program
     {
-        public static void Main(string[] args)
+        public void Main(string[] args)
         {
             string[] _fuelType = { "Petrol", "Diesel", "LPG" };
             string[] _vehicleTypes = { "Car", "Van", "Lorry" };
 
             Random random = new Random();
-            Car car = new Car();
 
+            Car car = new Car("Petrol", random.Next(1,25));
+            Console.WriteLine(car.VehicleInfo);
+            Console.WriteLine(car.VehicleInfo2());
 
-
-
-            Vehicle myObj = new Vehicle(_fuelType[random.Next(1,3)], _vehicleTypes[random.Next(1, 3)], 50, 12);
-            Console.WriteLine(myObj.VehicleInfo);
-
-            Vehicle myObj2 = new Vehicle(_fuelType[random.Next(1, 3)], _vehicleTypes[random.Next(1, 3)], 50, 12);
-            Console.WriteLine(myObj2.VehicleInfo);
-
-            Vehicle myObj3 = new Vehicle(_fuelType[random.Next(1, 3)], _vehicleTypes[random.Next(1, 3)], 50, 12);
-            Console.WriteLine(myObj3.VehicleInfo);
-
-            //Console.WriteLine(_vehicleTypes[vehicleGenerator]);
-            //Console.WriteLine(_fuelType[fuelGenerator]);
-
+            var Lorry = new HVG(100);
+            Console.WriteLine(Lorry.VehicleInfo);
+            Console.WriteLine(Lorry.VehicleInfo2());
+          
         }
     }
 }

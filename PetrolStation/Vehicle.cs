@@ -1,29 +1,36 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Runtime.ConstrainedExecution;
 
 namespace PetrolStation
 {
     public class Vehicle
     {
-        Random random = new Random();
-        string vehicleFuelType { get; set; }
-        string typeofVehicle { get; set; }
-        int vehicleTankSize { get; set; }
-        int currentFuel { get; set; }
-      
-        public Vehicle(List<string> fuelType, string vehicleType, int tankSize, int startingFuel, int newVehicleCreation)
+        private static readonly Random random = new Random();
+
+        string VehicleFuelType { get; set; }
+        string TypeofVehicle { get; set; }
+        int VehicleTankSize { get; set; }
+        int StartingFuel { get; set; }
+        int NewVehicleCreation { get; set; }
+        
+
+        public Vehicle(string vehicleFuelType, string typeofVehicle, int vehicleTankSize, int startingFuel, int newVehicleCreation = 1500)
         {
-            newVehicleCreation = random.Next(1500, 2500);
-            fuelType = new List<string>() {"Diesel", "Petrol", "LPG"};
-            typeofVehicle = vehicleType;
-            vehicleTankSize = tankSize;
-            currentFuel = startingFuel;
+            this.VehicleFuelType = vehicleFuelType;
+            this.TypeofVehicle = typeofVehicle;
+            this.VehicleTankSize = vehicleTankSize;
+            this.StartingFuel = startingFuel;
+            this.NewVehicleCreation = newVehicleCreation;
         }
 
         public string VehicleInfo
         {
-            get => $"Vehicle is a {typeofVehicle} that uses {vehicleFuelType} with a tank size of {vehicleTankSize} " +
-                $"and with a starting fuel of {currentFuel}";
+            get => $"Vehicle is a {TypeofVehicle} that uses {VehicleFuelType} with a tank size of {VehicleTankSize} and with a starting fuel of {StartingFuel}";
+        }
+
+        public string VehicleInfo2()
+        {
+            return $"Vehicle is a {TypeofVehicle} that uses {VehicleFuelType} with a tank size of {VehicleTankSize} and with a starting fuel of {StartingFuel}";
         }
 
     }

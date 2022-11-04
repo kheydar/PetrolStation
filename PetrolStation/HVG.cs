@@ -1,18 +1,16 @@
-﻿
-using System;using PetrolStation;
+﻿using System;
+using PetrolStation;
 
 namespace PetrolStation
 {
     class HVG : Vehicle
     {
-        public HVG(List<string> fuelType, string vehicleType, int tankSize, int startingFuel, int newVehicleCreation,int vehicleTankSize = 150)
-            : base(fuelType, vehicleType, tankSize, startingFuel, newVehicleCreation)
+        public HVG( int startingFuel, int newVehicleCreation = 1500, int vehicleTankSize = 150, string vehicleFuelType = "Diesel", string typeofVehicle = "HVG")
+            : base(vehicleFuelType, typeofVehicle, vehicleTankSize, startingFuel, newVehicleCreation)
         {
-            //int vehicleTankSize = 150;
             Random random = new Random();
             startingFuel = random.Next(0, 75);
-            fuelType = new List<string>() { "Diesel"};
-            vehicleType = "HVG";
+
         }
     }
 
