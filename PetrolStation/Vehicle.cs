@@ -1,37 +1,46 @@
 ﻿using System;
-using System.Runtime.ConstrainedExecution;
 
 namespace PetrolStation
 {
     public class Vehicle
     {
-        private static readonly Random random = new Random();
 
         string VehicleFuelType { get; set; }
         string TypeofVehicle { get; set; }
         int VehicleTankSize { get; set; }
         int StartingFuel { get; set; }
         int NewVehicleCreation { get; set; }
-        
+        string[]? randFuelType { get; set; }
+        string[]? randVehicle { get; set; }
+
+        Random random = new Random();
+
 
         public Vehicle(string vehicleFuelType, string typeofVehicle, int vehicleTankSize, int startingFuel, int newVehicleCreation = 1500)
         {
-            this.VehicleFuelType = vehicleFuelType;
-            this.TypeofVehicle = typeofVehicle;
-            this.VehicleTankSize = vehicleTankSize;
-            this.StartingFuel = startingFuel;
-            this.NewVehicleCreation = newVehicleCreation;
+            VehicleFuelType = vehicleFuelType;
+            TypeofVehicle = typeofVehicle;
+            VehicleTankSize = vehicleTankSize;
+            StartingFuel = startingFuel;
+            NewVehicleCreation = newVehicleCreation;
+        }
+
+        public Vehicle()
+        {
+            randFuelType = new string[] { "Diesel", "Petrol", "LPG" };
+            VehicleFuelType = randFuelType[random.Next(0, 2)];
+            randVehicle = new string[] { "Car", "Van", "HVG" };
+            TypeofVehicle = randVehicle[random.Next(0, 2)];
+            VehicleTankSize = random.Next(50, 150);
+            StartingFuel = random.Next(0, 150);
+            NewVehicleCreation = random.Next(1500, 2200);
         }
 
         public string VehicleInfo
         {
             get => $"Vehicle is a {TypeofVehicle} that uses {VehicleFuelType} with a tank size of {VehicleTankSize} and with a starting fuel of {StartingFuel}";
         }
-
-        public string VehicleInfo2()
-        {
-            return $"Vehicle is a {TypeofVehicle} that uses {VehicleFuelType} with a tank size of {VehicleTankSize} and with a starting fuel of {StartingFuel}";
-        }
+        
 
     }
 }

@@ -5,14 +5,30 @@ namespace PetrolStation
 {
     class Van : Vehicle
     {
+        private readonly Random random = new Random();
+        private int startingFuel;
+        private string[]? FuelType { get; set; }
+        private string? VehicleFuelType { get; set; }
+
         public Van(string vehicleFuelType, int startingFuel, int newVehicleCreation = 1500, int vehicleTankSize = 80, string typeofVehicle = "Van")
             : base(vehicleFuelType, typeofVehicle, vehicleTankSize, startingFuel, newVehicleCreation)
 
         {
+
+
+        }
+
+        public Van(int vehicleTankSize = 80, string typeofVehicle = "Van")
+           : base()
+
+        {
             Random random = new Random();
             startingFuel = random.Next(0, 40);
-            //vehicleFuelType = new string[] { "Diesel", "LPG" };
+            FuelType = new string[] { "Diesel", "LPG" };
+            VehicleFuelType = FuelType[random.Next(0, 2)];
+
         }
+
     }
 
 }
