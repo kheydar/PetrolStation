@@ -8,11 +8,14 @@ namespace PetrolStation
         static void Main(string[] args)
         {
 
-            var obj = new Vehicle();
-            Console.WriteLine(obj.VehicleInfo);
+            //var obj = new Vehicle();
+            //Console.WriteLine(obj.VehicleInfo);
 
-            Car car = new Car();
+            var car = new Car();
             Console.WriteLine(car.VehicleInfo);
+
+            var Van = new Van();
+            Console.WriteLine(Van.VehicleInfo);
 
 
             var Lorry = new HVG();
@@ -21,5 +24,3 @@ namespace PetrolStation
         }
     }
 }
-
-//Warning CS7022: The entry point of the program is global code; ignoring 'Program.Main(string[])' entry point. (CS7022) (PetrolStation)

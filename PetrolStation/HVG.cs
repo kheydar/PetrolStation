@@ -25,7 +25,11 @@ namespace PetrolStation
         {
             Random random = new Random();
             startingFuel = random.Next(0, 75);
+        }
 
+        public override string VehicleInfo
+        {
+            get => $"Vehicle is a HVG running on Diesel with a tank size of 150 and with a starting fuel of {startingFuel}";
         }
 
     }

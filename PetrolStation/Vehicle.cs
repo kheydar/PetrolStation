@@ -36,12 +36,11 @@ namespace PetrolStation
             NewVehicleCreation = random.Next(1500, 2200);
         }
 
-        public string VehicleInfo
+        public virtual string VehicleInfo
         {
             get => $"Vehicle is a {TypeofVehicle} that uses {VehicleFuelType} with a tank size of {VehicleTankSize} and with a starting fuel of {StartingFuel}";
         }
-        
-
+     
     }
 }
 

@@ -26,7 +26,11 @@ namespace PetrolStation
             startingFuel = random.Next(0, 40);
             FuelType = new string[] { "Diesel", "LPG" };
             VehicleFuelType = FuelType[random.Next(0, 2)];
+        }
 
+        public override string VehicleInfo
+        {
+            get => $"Vehicle is a Van running on {VehicleFuelType} with a tank size of 80 and with a starting fuel of {startingFuel}";
         }
 
     }
